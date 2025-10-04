@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:/data/demo
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+  application:
+    name: demo
+  flyway:
+    user: sa
+    password: password
+    schemas: app-db
+    url: jdbc:h2:file:/data/demo
+    enabled: true
+  h2:
+    console:
+      enabled: true
